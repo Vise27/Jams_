@@ -1,0 +1,48 @@
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+.btn.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    background-color: #3498db; /* Azul claro */
+    border: none;
+    color: white;
+}
+
+.btn.add-to-cart i {
+    margin-right: 8px;
+}
+
+.btn.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.product-name {
+    color: #2c3e50; /* Azul oscuro  */
+}
+
+.product-price {
+    color:  #2c3e50; /* Rojo coral claro */
+}
+

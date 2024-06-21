@@ -1,0 +1,24 @@
+
+#template-mo-zay-hero-carousel .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Utiliza la altura de la vista para pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    #template-mo-zay-hero-carousel .carousel-item {
+        height: 30vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #template-mo-zay-hero-carousel .carousel-item {
+        height: 50vh; /* Ajusta la altura para pantallas medianas */
+    }
+}
+
+@media (min-width: 1201px) {
+    #template-mo-zay-hero-carousel .carousel-item {
+        height: 70vh; /* Mantén la altura original para pantallas grandes */
+    }
+}

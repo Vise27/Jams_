@@ -1,0 +1,79 @@
+
+        /* Estilos para el modal */
+        .modal-dialog {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .modal-content {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .modal-body {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .modal-footer {
+            justify-content: center;
+            border-top: 1px solid #ccc;
+            padding: 15px 20px;
+        }
+
+        /* Estilos específicos para la disposición horizontal */
+        .product-image {
+            flex: 1;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            flex: 2;
+        }
+
+        @media (min-width: 768px) {
+            .product-image {
+                width: 50%;
+            }
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .product-card {
+            position: relative;
+        }
+
+        .discount-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el nombre del producto y el precio */
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #59ab6e;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }

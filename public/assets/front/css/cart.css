@@ -1,0 +1,79 @@
+.cart-container {
+    display: none;
+    position: fixed; /* Cambiamos a fixed para que el carrito permanezca fijo en la ventana */
+    top: 130px; /* Ajustamos la posición para que el carrito esté debajo del header */
+    right: 20px;
+    max-width: 450px;
+    max-height: 410px;
+    min-width: 450px;
+    min-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.cart-container.show {
+    display: block;
+}
+
+.cart-items {
+    max-height: 270px; /* Establece una altura máxima para los elementos */
+    overflow-y: auto; /* Agrega scroll vertical solo para los elementos */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 50px; /* Cambia el tamaño de la imagen */
+    height: 50px; /* Cambia el tamaño de la imagen */
+    margin-right: 10px;
+}
+
+.item-details {
+    flex: 2; /* Los detalles del ítem ocuparán 2/4 del espacio disponible */
+    height: 48px; /* Ajustamos la altura para que se adapte al contenido */
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del flex a columna */
+    align-items: flex-start; /* Alineamos los elementos al inicio */
+}
+
+.quantity-controls {
+    flex: 1; /* Los controles de cantidad ocuparán 1/4 del espacio disponible */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los controles de cantidad a la derecha */
+}
+
+.item-delete {
+    flex: 1; /* El botón de eliminar ocupará 1/4 del espacio disponible */
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea el botón de eliminar a la derecha */
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #ccc;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #ccc;
+    margin-left: 5px; /* Ajusta el espacio entre los botones */
+}
